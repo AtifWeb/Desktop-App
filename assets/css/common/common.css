@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --BodyBgColor: #1e1e1e;
+  --DashboardBoxBgColor: #161718;
+  --TextContentColor: #dee4ee;
+  --DashboardFrontColor: #151617;
+  --activeOptionColor: #acecfd;
+}
+.dashobard-btn-black {
+  font-size: 11px;
+  padding: 0.6rem 0rem;
+  border: none;
+  outline: none;
+  color: var(--TextContentColor);
+  background-color: var(--DashboardBoxBgColor);
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 400;
+  box-shadow: 1px 2px 4px rgba(9, 10, 16, 0.25);
+}
+body {
+  background-color: var(--BodyBgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  color: var(--TextContentColor);
+  font-family: MontserratREG;
+}
+
+.active-option {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dashboard-container {
+  background-color: var(--DashboardBoxBgColor);
+  height: 600px;
+  width: 1058px;
+  position: relative;
+  padding: 2rem 1.5rem;
+}
+
+.dashboard-container > .top-dots {
+  position: absolute;
+  right: 2%;
+  top: 1%;
+}
+
+.top-dots > :nth-child(1) {
+  margin-right: 4px;
+}
+.dashboard-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dashboard-container-header .logo {
+  display: flex;
+  align-items: center;
+}
+.dashboard-container-header .logo > * + * {
+  margin-left: 8px;
+}
+.organization-name {
+  color: #2f2f31;
+  font-weight: 700;
+  font-size: 17px;
+}
+.organization-name > span {
+  color: #fff;
+  font-weight: 500;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+}
+.header-right > .icons {
+  display: flex;
+  align-items: center;
+}
+.header-right > .icons > * {
+  cursor: pointer;
+}
+
+.header-right > .icons > .notification-icon {
+  margin-right: 8px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25),
+    -1px 4px 4px rgba(9, 10, 16, 0.25);
+  padding: 0.4rem 1.5rem;
+  margin: 0px 3rem 0px 1rem;
+  border-radius: 11px;
+}
+
+.profile > .profile-pic {
+  background-image: url("../../images/avatar/avatar.png");
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.profile > .profile-name {
+  margin-left: 20px;
+  font-size: 10px;
+}
+
+/* .arrow-up-icon,.arrow-down-icon{
+      background-color: #fff;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+  } */
+
+/* Body Start */
+.dashboard-container-body {
+  margin-top: 20px;
+  display: flex;
+  height: 90%;
+}
+
+.dashboard-container-body > * + * {
+  margin-left: 2rem;
+}
+
+.side-bar {
+  background-color: var(--DashboardFrontColor);
+  width: 148px;
+  overflow: hidden;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(9, 10, 16, 0.25);
+  height: 465px;
+}
+
+.side-bar .options .option {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.side-bar .options .option .icon-wrapper {
+  width: 20px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.side-bar .options .option > p {
+  font-size: 11px;
+  padding-top: 2px;
+  padding: 0.3rem 0rem;
+}
+.side-bar .options .option > p:hover {
+  color: var(--activeOptionColor);
+}
+
+.option.active {
+  color: var(--activeOptionColor);
+}
+
+/* side bar btns */
+.side-bar-btns {
+  margin-top: 20px;
+}
+.side-bar-btns button {
+  width: 100%;
+  font-size: 11px;
+  padding: 0.6rem 0rem;
+  margin-bottom: 5px;
+  border: none;
+  outline: none;
+  color: var(--TextContentColor);
+  background-color: var(--DashboardBoxBgColor);
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 400;
+  box-shadow: 1px 2px 4px rgba(9, 10, 16, 0.25);
+  font-size: 10px;
+}
+
+.version {
+  color: var(--TextContentColor);
+  font-size: 8px;
+  text-align: center;
+  margin: 0.7rem 0rem;
+}
+.license-activation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.license-activation-wrapper > small {
+  font-size: 8px;
+  color: var(--TextContentColor);
+}
+.activation-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 7px;
+}
