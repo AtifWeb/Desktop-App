@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="../assets/images/Black1.svg" />
+
+    <!-- css files -->
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css" /> -->
+   
+    <link rel="stylesheet" href="../assets/css/fonts.css" />
+    <link rel="stylesheet" href="../assets/css/common/common.css" />
+    <link rel="stylesheet" href="../assets/css/settings/settings.css" />
+    <link rel="stylesheet" href="../assets/css/Monitors/Monitors.css">
+    <link rel="stylesheet" href="../assets/css/captchas/captchas.css" />
+    <link rel="stylesheet" href="../assets/css/profile/profile.css" />
+    <link rel="stylesheet" href="../assets/css/tasks/tasks.css" />
+    <link rel="stylesheet" href="../assets/css/LicenseActivation/license-activation.css">
+
+
+    <!-- Popups Css -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/settings/create-account-popup.css"
+    />
+    <link rel="stylesheet" href="../assets/css/captchas/captchas-popup.css" />
+    <link rel="stylesheet" href="../assets/css/tasks/create-group-task.css">
+
+    <title>VIBRISBOTS</title>
+  </head>
+  <body>
+    <p class="active-option-heading">Profile</p>
+    <section class="license-activation-container" style="display: none;">
+      <div class="company-logo">
+        <img src="../assets/images/Black1.svg" alt="">
+        <h1 class="organization-name">VIBRIS<span>BOTS</span></h1>
+      </div>
+      <form class="license-activation-form">
+        <input type="text" placeholder="Enter License" class="license-input">
+        <input type="submit" value="Activate" class="license-active-button">
+        <span class="license-toggle-option"></span>
+      </form>
+    </section>
+    <section class="dashboard-container" style="">
+      <div class="top-dots">
+        <img
+          src="../assets/images/Icons/header-icons/blue-dot.png"
+          alt="blue-dot"
+        />
+        <img
+          src="../assets/images/Icons/header-icons/pink-dot.png"
+          alt="pink dot"
+        />
+      </div>
+      <header class="dashboard-container-header">
+        <div class="logo header-left">
+          <img src="../assets/images/Logo/logo.png" alt="logo" class="logo" />
+          <h1 class="organization-name">VIBRIS<span>BOTS</span></h1>
+        </div>
+        <div class="header-right">
+          <div class="icons">
+            <img
+              src="../assets/images/Icons/header-icons/notfication-bell.png"
+              alt=""
+              class="notification-icon"
+            />
+            <img
+              src="../assets/images/Icons/header-icons/up-arrow.svg"
+              alt=""
+              class="arrow-up-icon arrow-icon"
+            />
+            <img
+              src="../assets/images/Icons/header-icons/down-arrow.svg"
+              alt=""
+              class="arrow-down-icon arrow-icon"
+            />
+          </div>
+          <div class="profile">
+            <div class="profile-pic"></div>
+            <p class="profile-name">Atif Asim</p>
+          </div>
+        </div>
+      </header>
+      <section class="dashboard-container-body">
+        <aside class="side-bar">
+          <div class="options">
+            <div class="option" id="Dashboard">
+              <div class="icon-wrapper">
+                <img
+                  src="../assets/images/Icons/sidebar-icon/home.svg"
+                  alt=""
+                />
+              </div>
+              <p>Dashboard</p>
+            </div>
+            <div class="option" id="Task">
+              <div class="icon-wrapper">
+                <img
+                  src="../assets/images/Icons/sidebar-icon/task.svg"
+                  alt=""
+                />
+              </div>
+              <p>Tasks</p>
+            </div>
+            <div class="option active-option" id="Profile">
+              <div class="icon-wrapper">
+                <img
+                  src="../assets/images/Icons/sidebar-icon/profile.svg"
+                  alt=""
+                />
+              </div>
+              <p>Profiles</p>
+            </div>
+            <div class="option" id="Proxies">
+              <div class="icon-wrapper">
+                <img
+                  src="../assets/images/Icons/sidebar-icon/proxies.svg"
+                  alt=""
+                />
+              </div>
+              <p>Proxies</p>
+            </div>
+            <div class="option" id="Captchas">
+              <div class="icon-wrapper">
+                <img
+                  src="../assets/images/Icons/sidebar-icon/captchas.svg"
+                  alt=""
+                />
+              </div>
+              <p>Captchas</p>
+            </div>
+            <div class="option" id="Monitors">
+              <div class="icon-wrapper">
+                <img
+                  src="../assets/images/Icons/sidebar-icon/monitors.svg"
+                  alt=""
+                />
+              </div>
+              <p>Monitors</p>
+            </div>
+            <div class="option setting-option active" id="Settings">
+              <div class="icon-wrapper">
+                <img
+                  src="../assets/images/Icons/sidebar-icon/settings.svg"
+                  alt=""
+                />
+              </div>
+              <p>Settings</p>
+            </div>
+          </div>
+
+          <div class="side-bar-btns">
+            <button>Save Settings</button>
+            <button class="create-account-sidbar-btn">Create Account</button>
+            <button>Create Rates</button>
+            <button>View Rates</button>
+            <button>Text Webhook</button>
+          </div>
+
+          <p class="version">v.0.2.0</p>
+
+          <div class="license-activation-wrapper">
+            <div class="activation-dot"></div>
+            <small>License Activated</small>
+          </div>
+        </aside>
+
+
+        <!-- Monitors -->
+        <section class="monitors-container section-container Monitors d-none">
+
+        </section>
+
+        <!-- Tasks -->
+        <section class="tasks-container section-container Task d-none">
+          <div class="task-left-side">
+            <div class="progress-cards">
+              <div class="progress-card carted">
+                <h3>300</h3>
+                <h3>Carted</h3>
+              </div>
+              <div class="progress-card carted">
+                <h3>200</h3>
+                <h3>Checkouts</h3>
+              </div>
+              <div class="progress-card carted">
+                <h3>30</h3>
+                <h3>Declines</h3>
+              </div>
+            </div>
+
+            <div class="footsites">
+              <div class="footsites-top">
+                <h3>Footsites</h3>
+                <h3>100 Tasks</h3>
+              </div>
+
+              <form class="footsites-form">
+                <table class="footsites-table">
+                  <div class="footsites-table-head">
+                    <div class="footsites-table-head-row">
+                    <input type="checkbox" class="footsites-table-checkbox" />
+                    <small class="id-table-thead">ID</small>
+                    <small class="products-table-thead">Products</small>
+                    <small class="details-table-thead">Details</small>
+                    <small class="profile-table-thead">Profile</small>
+                    <small class="status-table-thead">Status</small>
+                    <small class="action-table-thead">Action</small>
+                    </div>
+                    </div>
+                    <div class="task-table-body">
+                    <div class="task-table-body-row">
+                    <input type="checkbox" class="footsites-table-checkbox" />
+                    <small class="task-id">01</small>
+                    <div class="product-image-wrapper">
+                    <img
+                    src="../assets/images/tasksImages/shoe task pic.png"
+                    alt=""
+                    class="product-img"
+                    />
+                    </div>
+
+                    <div class="task-details">
+                    <small> Adidas Yeezy 350 - Black </small>
+                    <div>
+                    <small>YeezySupply</small>
+                    <small>8 US</small>
+                    </div>
+                    </div>
+
+                    <small class="task-profile">TB Private</small>
+
+                    <small class="check-result">Successful Checkout</small>
+
+                    <div class="tasks-table-icons">
+                    <img
+                    src="../assets/images/Icons/task-icon/play-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/pause-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/layers-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/edit-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/delete-task.svg"
+                    alt=""
+                    />
+                    </div>
+                    </div> <div class="task-table-body">
+                    <div class="task-table-body-row">
+                    <input type="checkbox" class="footsites-table-checkbox" />
+                    <small class="task-id">01</small>
+                    <div class="product-image-wrapper">
+                    <img
+                    src="../assets/images/tasksImages/shoe task pic.png"
+                    alt=""
+                    class="product-img"
+                    />
+                    </div>
+
+                    <div class="task-details">
+                    <small> Adidas Yeezy 350 - Black </small>
+                    <div>
+                    <small>YeezySupply</small>
+                    <small>8 US</small>
+                    </div>
+                    </div>
+
+                    <small class="task-profile">TB Private</small>
+
+                    <small class="check-result">Successful Checkout</small>
+
+                    <div class="tasks-table-icons">
+                    <img
+                    src="../assets/images/Icons/task-icon/play-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/pause-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/layers-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/edit-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/delete-task.svg"
+                    alt=""
+                    />
+                    </div>
+                    </div> <div class="task-table-body">
+                    <div class="task-table-body-row">
+                    <input type="checkbox" class="footsites-table-checkbox" />
+                    <small class="task-id">01</small>
+                    <div class="product-image-wrapper">
+                    <img
+                    src="../assets/images/tasksImages/shoe task pic.png"
+                    alt=""
+                    class="product-img"
+                    />
+                    </div>
+
+                    <div class="task-details">
+                    <small> Adidas Yeezy 350 - Black </small>
+                    <div>
+                    <small>YeezySupply</small>
+                    <small>8 US</small>
+                    </div>
+                    </div>
+
+                    <small class="task-profile">TB Private</small>
+
+                    <small class="check-result">Successful Checkout</small>
+
+                    <div class="tasks-table-icons">
+                    <img
+                    src="../assets/images/Icons/task-icon/play-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/pause-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/layers-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/edit-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/delete-task.svg"
+                    alt=""
+                    />
+                    </div>
+                    </div> 
+                    <div class="task-table-body">
+                    <div class="task-table-body-row">
+                    <input type="checkbox" class="footsites-table-checkbox" />
+                    <small class="task-id">01</small>
+                    <div class="product-image-wrapper">
+                    <img
+                    src="../assets/images/tasksImages/shoe task pic.png"
+                    alt=""
+                    class="product-img"
+                    />
+                    </div>
+
+                    <div class="task-details">
+                    <small> Adidas Yeezy 350 - Black </small>
+                    <div>
+                    <small>YeezySupply</small>
+                    <small>8 US</small>
+                    </div>
+                    </div>
+
+                    <small class="task-profile">TB Private</small>
+
+                    <small class="check-result">Successful Checkout</small>
+
+                    <div class="tasks-table-icons">
+                    <img
+                    src="../assets/images/Icons/task-icon/play-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/pause-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/layers-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/edit-task.svg"
+                    alt=""
+                    />
+                    <img
+                    src="../assets/images/Icons/task-icon/delete-task.svg"
+                    alt=""
+                    />
+                    </div>
+                    </div> <div class="task-table-body">
+                    <div class="task-table-body-row">
+                    <input type="checkbox" class="footsites-table-checkbox" />
+                    <small class="task-id">01</small>
+                    <div class="product-image-wrapper">
+                    <img
+                      src="../assets/images/tasksImages/shoe task pic.png"
+                      alt=""
+                      class="product-img"
+                    />
+                    </div>
+
+                    <div class="task-details">
+                    <small> Adidas Yeezy 350 - Black </small>
+                    <div>
+                      <small>YeezySupply</small>
+                      <small>8 US</small>
+                    </div>
+                    </div>
+
+                    <small class="task-profile">TB Private</small>
+
+                    <small class="check-result">Successful Checkout</small>
+
+                    <div class="tasks-table-icons">
+                    <img
+                      src="../assets/images/Icons/task-icon/play-task.svg"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/Icons/task-icon/pause-task.svg"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/Icons/task-icon/layers-task.svg"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/Icons/task-icon/edit-task.svg"
+                      alt=""
+                    />
+                    <img
+                      src="../assets/images/Icons/task-icon/delete-task.svg"
+                      alt=""
+                    />
+                    </div>
+                    </div> <div class="task-table-body">
+                    <div class="task-table-body-row">
+                    <input type="checkbox" class="footsites-table-checkbox" />
+                    <small class="task-id">01</small>
+                    <div class="product-image-wrapper">
+                      <img
+                        src="../assets/images/tasksImages/shoe task pic.png"
+                        alt=""
+                        class="product-img"
+                      />
+                    </div>
+
+                    <div class="task-details">
+                      <small> Adidas Yeezy 350 - Black </small>
+                      <div>
+                        <small>YeezySupply</small>
+                        <small>8 US</small>
+                      </div>
+                    </div>
+
+                    <small class="task-profile">TB Private</small>
+
+                    <small class="check-result">Successful Checkout</small>
+
+                    <div class="tasks-table-icons">
+                      <img
+                        src="../assets/images/Icons/task-icon/play-task.svg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/Icons/task-icon/pause-task.svg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/Icons/task-icon/layers-task.svg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/Icons/task-icon/edit-task.svg"
+                        alt=""
+                      />
+                      <img
+                        src="../assets/images/Icons/task-icon/delete-task.svg"
+                        alt=""
+                      />
+                    </div>
+                    </div> <div class="task-table-body">
+                    <div class="task-table-body-row">
+                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <small class="task-id">01</small>
+                      <div class="product-image-wrapper">
+                        <img
+                          src="../assets/images/tasksImages/shoe task pic.png"
+                          alt=""
+                          class="product-img"
+                        />
+                      </div>
+
+                      <div class="task-details">
+                        <small> Adidas Yeezy 350 - Black </small>
+                        <div>
+                          <small>YeezySupply</small>
+                          <small>8 US</small>
+                        </div>
+                      </div>
+
+                      <small class="task-profile">TB Private</small>
+
+                      <small class="check-result">Successful Checkout</small>
+
+                      <div class="tasks-table-icons">
+                        <img
+                          src="../assets/images/Icons/task-icon/play-task.svg"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/Icons/task-icon/pause-task.svg"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/Icons/task-icon/layers-task.svg"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/Icons/task-icon/edit-task.svg"
+                          alt=""
+                        />
+                        <img
+                          src="../assets/images/Icons/task-icon/delete-task.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div> <div class="task-table-body">
+                      <div class="task-table-body-row">
+                        <input type="checkbox" class="footsites-table-checkbox" />
+                        <small class="task-id">01</small>
+                        <div class="product-image-wrapper">
+                          <img
+                            src="../assets/images/tasksImages/shoe task pic.png"
+                            alt=""
+                            class="product-img"
+                          />
+                        </div>
+
+                        <div class="task-details">
+                          <small> Adidas Yeezy 350 - Black </small>
+                          <div>
+                            <small>YeezySupply</small>
+                            <small>8 US</small>
+                          </div>
+                        </div>
+
+                        <small class="task-profile">TB Private</small>
+
+                        <small class="check-result">Successful Checkout</small>
+
+                        <div class="tasks-table-icons">
+                          <img
+                            src="../assets/images/Icons/task-icon/play-task.svg"
+                            alt=""
+                          />
+                          <img
+                            src="../assets/images/Icons/task-icon/pause-task.svg"
+                            alt=""
+                          />
+                          <img
+                            src="../assets/images/Icons/task-icon/layers-task.svg"
+                            alt=""
+                          />
+                          <img
+                            src="../assets/images/Icons/task-icon/edit-task.svg"
+                            alt=""
+                          />
+                          <img
+                            src="../assets/images/Icons/task-icon/delete-task.svg"
+                            alt=""
+                          />
+                        </div>
+                      </div> <div class="task-table-body">
+                        <div class="task-table-body-row">
+                          <input type="checkbox" class="footsites-table-checkbox" />
+                          <small class="task-id">01</small>
+                          <div class="product-image-wrapper">
+                            <img
+                              src="../assets/images/tasksImages/shoe task pic.png"
+                              alt=""
+                              class="product-img"
+                            />
+                          </div>
+
+                          <div class="task-details">
+                            <small> Adidas Yeezy 350 - Black </small>
+                            <div>
+                              <small>YeezySupply</small>
+                              <small>8 US</small>
+                            </div>
+                          </div>
+
+                          <small class="task-profile">TB Private</small>
+
+                          <small class="check-result">Successful Checkout</small>
+
+                          <div class="tasks-table-icons">
+                            <img
+                              src="../assets/images/Icons/task-icon/play-task.svg"
+                              alt=""
+                            />
+                            <img
+                              src="../assets/images/Icons/task-icon/pause-task.svg"
+                              alt=""
+                            />
+                            <img
+                              src="../assets/images/Icons/task-icon/layers-task.svg"
+                              alt=""
+                            />
+                            <img
+                              src="../assets/images/Icons/task-icon/edit-task.svg"
+                              alt=""
+                            />
+                            <img
+                              src="../assets/images/Icons/task-icon/delete-task.svg"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+                  </div>
+                </table>
+              </form>
+            </div>
+          </div>
+          
+          <div class="right-side-task">
+            <div class="grouped-tasks-container">
+              <div class="grouped-task-top">
+                <h3>Grouped Tasks</h3>
+                <img src="../assets/images/Icons/task-icon/add-task.svg" alt="" class="add-group-task-icon">
+              </div>
+              <div class="grouped-task-body">
+                <div class="group-tasks">
+                  <div class="group-task">
+                    <div class="task-name-wrapper">
+                      <div class="task-name">
+                        <div class="task-img"><span>F</span></div>
+                        <small>Footsites</small>
+                      </div>
+                      <img src="../assets/images/Icons/task-icon/arrow-task.svg" alt="" 
+                      class="task-display-icon"
+                      id="footsites-task-display-icon">
+                    </div>
+                    <div class="group-task-details footsites-task-display-icon">
+                      <div class="carts">
+                        <div class="cart1">
+                          <img src="../assets/images/Icons/task-icon/blue-cart.svg" alt="">
+                          <small>300</small>
+                        </div>
+                        <div class="cart2">
+                          <img src="../assets/images/Icons/task-icon/green-cart.svg" alt="">
+                          <small>200</small>
+                        </div>
+                        <div class="cart3">
+                          <img src="../assets/images/Icons/task-icon/pink-cart.svg" alt="">
+                          <small>25</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="profile-container Profile section-container">
+          <form class="profile-information">
+            <div class="shopping-information">
+              <small>Shopping Information</small>
+              <input
+                type="text"
+                placeholder="First Name"
+                class="name-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="Mid"
+                class="mid-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="last-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="Country"
+                class="country-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="State"
+                class="state-input pure-input"
+              />
+            </div>
+            <div class="billing-information">
+              <small>Billing Information</small>
+              <input
+                type="text"
+                placeholder="Address"
+                class="address-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="Apt"
+                class="apt-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="City"
+                class="city-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="Zip Code"
+                class="zip-input pure-input"
+              />
+            </div>
+            <div class="payment-information">
+              <small>Payment Information</small>
+              <input
+                type="text"
+                placeholder="Email"
+                class="email-input pure-input"
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                class="phone-input pure-input"
+              />
+              <div class="shipping-info">
+                <img
+                  src="../assets/images/Icons/profile-icon/shipping-info-icon.svg"
+                  alt=""
+                />
+                <small>Same as Shipping Info</small>
+              </div>
+            </div>
+          </form>
+          <div class="card-holders">
+            <div class="card-holder credit-card">
+              <div class="profile-name">
+                <h3>Profile Name</h3>
+                <h3>Visa</h3>
+              </div>
+              <img
+                src="../assets/images/Icons/profile-icon/credit-card.svg"
+                alt="chip"
+                class="chip-icon"
+              />
+              <div class="credit-card-numbers">
+                <span>*</span><span>*</span><span>*</span><span>*</span
+                ><span> </span><span>*</span><span>*</span><span>*</span
+                ><span>*</span><span></span><span>*</span><span>*</span
+                ><span>*</span><span>*</span><span> </span><span>1</span
+                ><span>2</span><span>3</span><span>4</span>
+              </div>
+              <h3 class="card-holder-name">Cardholder name</h3>
+            </div>
+            <div class="card-holder credit-card">
+              <div class="profile-name">
+                <h3>Profile Name</h3>
+                <h3>Visa</h3>
+              </div>
+              <img
+                src="../assets/images/Icons/profile-icon/credit-card.svg"
+                alt="chip"
+                class="chip-icon"
+              />
+              <div class="credit-card-numbers">
+                <span>*</span><span>*</span><span>*</span><span>*</span
+                ><span> </span><span>*</span><span>*</span><span>*</span
+                ><span>*</span><span></span><span>*</span><span>*</span
+                ><span>*</span><span>*</span><span> </span><span>1</span
+                ><span>2</span><span>3</span><span>4</span>
+              </div>
+              <h3 class="card-holder-name">Cardholder name</h3>
+            </div>
+            <div class="card-holder credit-card">
+              <div class="profile-name">
+                <h3>Profile Name</h3>
+                <h3>Visa</h3>
+              </div>
+              <img
+                src="../assets/images/Icons/profile-icon/credit-card.svg"
+                alt="chip"
+                class="chip-icon"
+              />
+              <div class="credit-card-numbers">
+                <span>*</span><span>*</span><span>*</span><span>*</span
+                ><span> </span><span>*</span><span>*</span><span>*</span
+                ><span>*</span><span></span><span>*</span><span>*</span
+                ><span>*</span><span>*</span><span> </span><span>1</span
+                ><span>2</span><span>3</span><span>4</span>
+              </div>
+              <h3 class="card-holder-name">Cardholder name</h3>
+            </div>
+            <div class="card-holder credit-card">
+              <div class="profile-name">
+                <h3>Profile Name</h3>
+                <h3>Visa</h3>
+              </div>
+              <img
+                src="../assets/images/Icons/profile-icon/credit-card.svg"
+                alt="chip"
+                class="chip-icon"
+              />
+              <div class="credit-card-numbers">
+                <span>*</span><span>*</span><span>*</span><span>*</span
+                ><span> </span><span>*</span><span>*</span><span>*</span
+                ><span>*</span><span></span><span>*</span><span>*</span
+                ><span>*</span><span>*</span><span> </span><span>1</span
+                ><span>2</span><span>3</span><span>4</span>
+              </div>
+              <h3 class="card-holder-name">Cardholder name</h3>
+            </div>
+            <div class="card-holder credit-card">
+              <div class="profile-name">
+                <h3>Profile Name</h3>
+                <h3>Visa</h3>
+              </div>
+              <img
+                src="../assets/images/Icons/profile-icon/credit-card.svg"
+                alt="chip"
+                class="chip-icon"
+              />
+              <div class="credit-card-numbers">
+                <span>*</span><span>*</span><span>*</span><span>*</span
+                ><span> </span><span>*</span><span>*</span><span>*</span
+                ><span>*</span><span></span><span>*</span><span>*</span
+                ><span>*</span><span>*</span><span> </span><span>1</span
+                ><span>2</span><span>3</span><span>4</span>
+              </div>
+              <h3 class="card-holder-name">Cardholder name</h3>
+            </div>
+            <div class="card-holder credit-card">
+              <div class="profile-name">
+                <h3>Profile Name</h3>
+                <h3>Visa</h3>
+              </div>
+              <img
+                src="../assets/images/Icons/profile-icon/credit-card.svg"
+                alt="chip"
+                class="chip-icon"
+              />
+              <div class="credit-card-numbers">
+                <span>*</span><span>*</span><span>*</span><span>*</span
+                ><span> </span><span>*</span><span>*</span><span>*</span
+                ><span>*</span><span></span><span>*</span><span>*</span
+                ><span>*</span><span>*</span><span> </span><span>1</span
+                ><span>2</span><span>3</span><span>4</span>
+              </div>
+              <h3 class="card-holder-name">Cardholder name</h3>
+            </div>
+          </div>
+        </section>
+
+        <!-- captchas-container -->
+        <section class="captchas-container Captchas section-container d-none">
+          <div class="captchas-cards">
+            <div class="captchas-card">
+              <h2>Harvester 1</h2>
+              <div class="captchas-btns">
+                <button class="dashobard-btn-black">3rd Party Solver</button>
+                <button class="dashobard-btn-black">3rd Party Solver</button>
+                <button class="dashobard-btn-black">3rd Party Solver</button>
+              </div>
+              <div class="captchas-card-icons">
+                <div class="play-icon-wrapper captchas-icon-wrapper">
+                  <img
+                    src="../assets/images/Icons/captchas-icon/play.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="share-icon-wrapper captchas-icon-wrapper">
+                  <img
+                    src="../assets/images/Icons/captchas-icon/open-in-new.svg"
+                    alt=""
+                    class="captchas-icon-PopUp"
+                  />
+                </div>
+                <div class="save-icon-wrapper captchas-icon-wrapper">
+                  <img
+                    src="../assets/images/Icons/captchas-icon/credit-card.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="captchas-card">
+              <h2>Harvester 1</h2>
+              <div class="captchas-btns">
+                <button class="dashobard-btn-black">3rd Party Solver</button>
+                <button class="dashobard-btn-black">3rd Party Solver</button>
+                <button class="dashobard-btn-black">3rd Party Solver</button>
+              </div>
+              <div class="captchas-card-icons">
+                <div class="play-icon-wrapper captchas-icon-wrapper">
+                  <img
+                    src="../assets/images/Icons/captchas-icon/play.svg"
+                    alt=""
+                  />
+                </div>
+                <div class="share-icon-wrapper captchas-icon-wrapper">
+                  <img
+                    src="../assets/images/Icons/captchas-icon/open-in-new.svg"
+                    alt=""
+                    class="captchas-icon-PopUp"
+                  />
+                </div>
+                <div class="save-icon-wrapper captchas-icon-wrapper">
+                  <img
+                    src="../assets/images/Icons/captchas-icon/credit-card.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- settings -->
+        <section class="settings-container Settings section-container d-none">
+          <!-- Cards Area -->
+          <div class="cards">
+            <div class="card license-details-card">
+              <div class="card-top">
+                <p>License Details</p>
+                <p>Renewal</p>
+              </div>
+              <div class="license-card-body">
+                <div class="dashboard">
+                  <h1>March 1st, 2020</h1>
+                  <button class="dashobard-btn-black">Dashboard</button>
+                </div>
+                <div class="join-discord">
+                  <h1>20 Days Remaining</h1>
+                  <button class="dashobard-btn-black">Join Discord</button>
+                </div>
+              </div>
+            </div>
+            <div class="card quick-task-card">
+              <div class="card-top">
+                <p>Quick Task</p>
+              </div>
+              <div class="quick-task-body">
+                <button class="dashobard-btn-black">Profile</button>
+                <button class="dashobard-btn-black">Proxies</button>
+                <button class="dashobard-btn-black">Account</button>
+                <button class="dashobard-btn-black">Size</button>
+                <button class="dashobard-btn-black">Mode</button>
+                <button class="dashobard-btn-black">Rates</button>
+              </div>
+            </div>
+            <div class="card custom-card">
+              <div class="card-top">
+                <p>Custom</p>
+              </div>
+              <div class="custom-body">
+                <div class="btns">
+                  <button class="dashobard-btn-black">Sound</button>
+                  <button class="dashobard-btn-black">Monitor</button>
+                  <button class="dashobard-btn-black">Error</button>
+                </div>
+                <div class="discord-webhook-btn">
+                  <button class="dashobard-btn-black">Discord Webhook</button>
+                  <span class="toggle-option"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card links-card">
+              <nav class="links">
+                <li><a href="#" class="link">Download Logs</a></li>
+                <li><a href="#" class="link">Privacy</a></li>
+                <li><a href="#" class="link">Terms of Service</a></li>
+                <li><a href="#" class="link">Contact Us</a></li>
+                <li><a href="#" class="link">Twitter</a></li>
+                <li><a href="#" class="link">Instagram</a></li>
+              </nav>
+            </div>
+          </div>
+
+          <div class="accounts-container">
+            <h3>100 Accounts</h3>
+            <div class="accounts-table">
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+              <div class="table-row">
+                <small>01</small>
+                <small>Atif</small>
+                <small>AtifAsim@gmail.com</small>
+                <small>Password123</small>
+                <small>Profile1</small>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section class="pop-ups">
+      <div class="create-account-popup" style="display: none">
+        <form class="create-account-form">
+          <div class="form-top">
+            <h3>Create Account</h3>
+            <div class="close-icons">
+              <img
+                src="../assets/images/Icons/header-icons/blue-dot.png"
+                alt=""
+              />
+              <img
+                src="../assets/images/Icons/header-icons/pink-dot.png"
+                alt=""
+                class="close-create-account-btn"
+              />
+            </div>
+          </div>
+
+          <div class="inputs-wrapper">
+            <input type="text" placeholder="Profile Name" />
+            <input type="text" placeholder="Site" />
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="Password" />
+            <input type="text" placeholder="Catchall" />
+            <input type="text" placeholder="Proxies" />
+            <input type="text" placeholder="# of accounts" />
+            <input type="text" placeholder="Generate" />
+          </div>
+
+          <div class="create-account-settings">
+            <h3>Settings</h3>
+            <div class="create-account-radio-btns">
+              <div class="radio-btn">
+                <label for="save-settings">Save current settings</label>
+                <input
+                  type="radio"
+                  name="create-account-settings"
+                  id="save-settings"
+                />
+              </div>
+              <div class="radio-btn">
+                <label for="creddintials-settings"
+                  >Randomize Creddintials</label
+                >
+                <input
+                  type="radio"
+                  name="create-account-settings"
+                  id="creddintials-settings"
+                />
+              </div>
+              <div class="radio-btn">
+                <label for="profile-settings">Randomize Profile</label>
+                <input
+                  type="radio"
+                  name="create-account-settings"
+                  id="profile-settings"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-bottom">
+            <label for="create-account-submit-btn">
+              <img src="../assets/images/Icons/captchas-icon/save.svg" alt="" />
+            </label>
+            <input
+              type="submit"
+              value=""
+              style="display: none"
+              id="create-account-submit-btn"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="captchas-popup">
+        <div class="captchas-loading">
+          <div class="captchas-loading-top">
+            <h3>Harvester 1</h3>
+            <div class="captchas-loading-top-icons">
+              <img
+                src="../assets/images/Icons/header-icons/blue-dot.png"
+                alt=""
+              />
+              <img
+                src="../assets/images/Icons/header-icons/pink-dot.png"
+                alt=""
+                class="close-captchas-button"
+              />
+            </div>
+          </div>
+
+          <div class="captchas-loading-body">
+            <img src="../assets/images/Icons/captchas-icon/Black.svg" alt="" />
+            <p>Loading Captchas...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="create-group-task-popup" >
+        <form class="create-group-task-form">
+          <h3>Grouped Task</h3>
+          <div class="input-wrapper">
+            <input type="text" class="pure-input" placeholder="Group Name">
+            <input type="text" class="pure-input" placeholder="Color">
+            <input type="text" class="pure-input" placeholder="Timer">
+            <input type="text" class="pure-input" placeholder="Sounds">
+          </div>
+          <small>Include</small>
+          <div class="checkboxes">
+            <div class="checkbox-wrapper">
+              <label for="carted">Carted</label>
+              <input type="checkbox" class="carted-checkbox" id="carted">
+            </div>
+            <div class="checkbox-wrapper">
+              <label for="checkouts">Checkouts</label>
+              <input type="checkbox" class="checkouts-checkbox" id="checkouts">
+            </div>
+            <div class="checkbox-wrapper">
+              <label for="declines">Declines</label>
+              <input type="checkbox" class="declines-checkbox" id="declines">
+            </div>
+          </div>
+          <div class="create-grouped-task-btn">
+            <label for="create-grouped-task-submit-btn">
+              <img src="../assets/images/Icons/captchas-icon/save.svg" alt="" class="create-grouped-save-icon">
+            </label>
+            <input type="submit" value="" style="display:none;" id="create-grouped-task-submit-btn">
+          </div>
+        </form>
+        <div class="group-tasks">
+          <h3 class="group-tasks-heading">Grouped Tasks</h3>
+          <div class="group-task">
+            <div class="task-name-wrapper">
+              <div class="task-name">
+                <div class="task-img"><span>F</span></div>
+                <small>Footsites</small>
+              </div>
+              <img src="../assets/images/Icons/task-icon/arrow-task.svg" alt="" 
+              class="task-display-icon"
+              id="footsites-task-display-icon-again">
+            </div>
+            <div class="group-task-details footsites-task-display-icon-again">
+              <div class="carts">
+                <div class="cart1">
+                  <img src="../assets/images/Icons/task-icon/blue-cart.svg" alt="">
+                  <small>300</small>
+                </div>
+                <div class="cart2">
+                  <img src="../assets/images/Icons/task-icon/green-cart.svg" alt="">
+                  <small>200</small>
+                </div>
+                <div class="cart3">
+                  <img src="../assets/images/Icons/task-icon/pink-cart.svg" alt="">
+                  <small>25</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../assets/js/index.js" type="module"></script>
+  </body>
+</html>

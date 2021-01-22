@@ -1,0 +1,86 @@
+.bg{
+  background-color: #161718;
+}
+#username{
+  margin-top: -10px;
+}
+a{
+  color: white;
+}
+.active, a:hover{
+  color: #ac85ca !important;
+}
+.text-gray{
+  color: gray;
+}
+.box-shadow{
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 1), -1px 4px 4px rgba(9, 10, 16, 1);
+}
+.bg-image{
+    background-image: linear-gradient(rgba(22, 23, 24, 0), rgba(22, 23, 24, 0)), url(../images/bg-logo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    height: 100vh;
+}
+.w-15{
+  width: 15%;
+}
+.logo-text{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+}
+
+.logo-text-dashboard{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  margin-top: 30px !important;
+}
+
+.btn-pri {
+  background-color: #161718 !important;
+  color: gray !important;
+  outline: none !important;
+  padding: 10px 30px;
+  border: none !important;
+}
+
+.license-box{
+  width: 325px;
+  color: gray;
+  text-align: center;
+  height: 41px;
+  border: none;
+  background: #151617;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 1), -1px 4px 4px rgba(9, 10, 16, 1);
+  border-radius: 25px;
+}
+
+.license-box:focus, .active-btn:focus{
+outline: none;
+}
+.active-btn:hover{
+  cursor: pointer;
+}
+
+.active-btn{
+  background-color: transparent;
+  border: 1px solid gray;
+  width: 177px;
+  border-radius: 25px;
+  color: gray;
+  /* height: 28px; */
+}
+.responsive-margin{
+  padding-top: 30vh; margin-left: 100px
+}
+@media screen and (max-width: 650px) {
+  .responsive-margin {
+    margin-left: 0px;
+  }
+  .license-box{
+    width: 250px;
+  }
+}

@@ -1,0 +1,4 @@
+.monitors-container {
+  flex: 1;
+  background-color: var(--DashboardFrontColor);
+}
