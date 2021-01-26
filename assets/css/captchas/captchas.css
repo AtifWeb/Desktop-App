@@ -1,0 +1,99 @@
+.captchas-container {
+  flex: 1;
+  height: 90%;
+  overflow: auto;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+}
+
+.captchas-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-height: 100%;
+  overflow: auto;
+}
+.captchas-cards::-webkit-scrollbar {
+  width: 3px;
+}
+.captchas-cards::-webkit-scrollbar-thumb {
+  background-color: var(--BodyBgColor);
+  border-radius: 10px;
+}
+.captchas-cards > * + * {
+  margin-left: 20px;
+}
+
+.captchas-card {
+  background-color: var(--DashboardFrontColor);
+  padding: 1rem 2rem;
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.captchas-card:nth-child(4) {
+  margin-left: 0px;
+}
+.captchas-card > h2 {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 1.8rem;
+}
+.captchas-input-form > input {
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  color: var(--TextContentColor);
+  height: 26px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.captchas-card-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.3rem;
+}
+.captchas-icon-wrapper {
+  width: 35px;
+  height: 35px;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.captchas-card-icons > * + * {
+  margin-left: 10px;
+}
+
+.captchas-card-icons > *:nth-child(3) img {
+  width: 100%;
+}
+.play-icon-wrapper > svg > path {
+  fill: var(--play-icon-color);
+}
+.share-icon-wrapper > svg > path {
+  fill: var(--open-new-icon-color);
+}
+.save-icon-wrapper > svg path {
+  fill: var(--save-icon-color);
+}
+
+.save-icon-wrapper > svg {
+  margin-top: 10px;
+}

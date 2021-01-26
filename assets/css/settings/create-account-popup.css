@@ -1,0 +1,88 @@
+.create-account-popup {
+  background-color: var(--DashboardFrontColor);
+  padding: 0.5rem 1rem;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.create-account-popup .form-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.create-account-popup .form-top svg {
+  cursor: pointer;
+}
+.form-top h3 {
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.inputs-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1.7rem;
+}
+
+.inputs-wrapper > input {
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  color: var(--TextContentColor);
+  height: 46px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.inputs-wrapper > input:nth-child(2n + 1),
+.inputs-wrapper > input:nth-child(1) {
+  margin-right: 15px;
+}
+
+.inputs-wrapper > input:nth-child(2n + 2) {
+  margin-left: 15px;
+}
+
+.create-account-settings {
+  margin-top: 2rem;
+}
+.create-account-settings > h3 {
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.create-account-settings .create-account-radio-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.radio-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.radio-btn label {
+  font-size: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.form-bottom {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+/* .form-bottom > label > img {
+  width: 45px;
+  cursor: pointer;
+} */
+#create-account-save-icon {
+  cursor: pointer;
+}
+#create-account-save-icon path {
+  fill: var(--save-icon-color);
+}
