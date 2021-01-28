@@ -1,0 +1,136 @@
+.create-task-popup {
+  display: flex;
+  gap: 20px;
+}
+.create-task-popup.d-none {
+  display: none;
+}
+.general-green-button,
+.advanced-blue-button,
+.misc-purple-button {
+  width: 417px;
+}
+
+.general-green-button-main-heading,
+.advanced-blut-button-main-heading,
+.misc-purple-button-main-heading {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  color: #dee4ee;
+}
+.create-task-popup .input-collection input {
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  color: var(--TextContentColor);
+  height: 28px;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-radius: 22px;
+}
+.general-green-button-form .input-collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 50px;
+  margin-top: 2.4rem;
+}
+.create-task-popup .input-collection > input:nth-child(3) {
+  grid-column: span 2;
+}
+.create-task-popup .input-collection > input:last-child {
+  grid-column: span 2;
+  justify-self: center;
+}
+.general-green-button-form,
+.advanced-blue-button-form,
+.misc-purple-button-form {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  background-color: var(--DashboardFrontColor);
+  height: 465px;
+  position: relative;
+}
+
+.general-green-button .form-top,
+.advanced-blue-button-form .form-top,
+.misc-purple-button-form .misc-purple-button-notes-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create-task-popup form svg {
+  cursor: pointer;
+}
+
+.create-task-popup .form-top-btns svg + svg {
+  margin-left: 5px;
+}
+.create-task-popup .form-bottom {
+  position: absolute;
+  right: 3%;
+  bottom: 5px;
+}
+.create-task-popup .form-bottom > label {
+  cursor: pointer;
+}
+
+.advanced-blue-button-form .input-collection {
+  margin-top: 2.4rem;
+}
+
+.advanced-blue-button-form .input-collection > div > h4 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+.create-task-input-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 50px;
+}
+
+/* misc-purple-button-notes-body */
+.misc-purple-button-notes-body {
+  width: 310px;
+  height: 339px;
+  overflow: auto;
+  border-radius: 10px;
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  background-color: var(--DashboardBoxBgColor);
+  margin: 30px auto;
+  padding: 0.5rem 1rem;
+}
+.misc-purple-button-notes-body::-webkit-scrollbar {
+  display: none;
+}
+form .create-task-form-top-heading {
+  font-weight: 400;
+  font-size: 15px;
+}
+.create-task-first-dot path {
+  fill: var(--save-icon-color);
+}
+.create-task-second-dot path {
+  fill: var(--activeOptionColor);
+}
+.create-task-third-dot path {
+  fill: var(--create-task-btn3);
+}
+/* .create-task-third-dot {
+  cursor: pointer;
+} */
+.create-task-popup .form-bottom svg path {
+  fill: var(--save-icon-color);
+}

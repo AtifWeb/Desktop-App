@@ -1,0 +1,98 @@
+.proxy-container {
+  display: flex;
+  flex: 1;
+  /* background-color: aqua; */
+}
+.proxy-collection {
+  width: 300px;
+  margin-top: 16px;
+}
+.proxy-container > * + * {
+  margin-left: 30px;
+}
+
+.proxy-collection > h3 {
+  font-weight: 400;
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+/* proxy-group-information */
+.proxy-group-information {
+  width: 145px;
+  margin-top: 5px;
+}
+.proxy-group-information input {
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  color: var(--TextContentColor);
+  height: 29px;
+  font-size: 12px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.proxy-group-form > input:first-child {
+  margin-bottom: 15px;
+}
+
+.field-wrapper > input {
+  margin-bottom: 8px;
+}
+
+/* proxy-good-bad-information */
+.proxy-container .proxy-good-bad-information {
+  flex: 1;
+}
+.good-bad-collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.proxy-container
+  .proxy-good-bad-information
+  > .good-bad-collection
+  .good-collection,
+.proxy-container
+  .proxy-good-bad-information
+  > .good-bad-collection
+  .bad-collection {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  padding: 0.5rem 1rem;
+  flex: 1;
+}
+.proxy-container .proxy-good-bad-information > .good-bad-collection {
+  margin-bottom: 10px;
+}
+.proxy-container .proxy-good-bad-information > .good-bad-collection > * + * {
+  margin-left: 20px;
+}
+.good-bad-collection h3 {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.proxy-good-bad-details,
+.proxy-collection .all-proxies-container,
+.proxy-group-form .field-wrapper {
+  background-color: var(--DashboardFrontColor);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
+  padding: 0.5rem;
+  height: 410px;
+  overflow: auto;
+}
+
+.proxy-good-bad-details::-webkit-scrollbar,
+.proxy-collection .all-proxies-container::-webkit-scrollbar,
+.proxy-group-form .field-wrapper::-webkit-scrollbar {
+  display: none;
+}

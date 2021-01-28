@@ -1,8 +1,8 @@
 .settings-container {
   display: flex;
   flex: 1;
-  /* display: none; */
 }
+
 .settings-container > * + * {
   margin-left: 20px;
 }
@@ -17,7 +17,8 @@
   width: 100%;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 1px 2px 4px rgba(9, 10, 16, 0.25);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
 }
 .cards > .card + .card {
   margin-top: 0.5rem;
@@ -25,7 +26,7 @@
 .cards .card .card-top {
   display: flex;
   justify-content: space-between;
-  font-size: 11px;
+  font-size: 10px;
 }
 
 .license-card-body {
@@ -46,19 +47,21 @@
 .license-card-body .join-discord > h1 {
   font-size: 14px;
   font-weight: 400;
+  line-height: 2em;
 }
 
 .license-card-body .dashboard button,
 .license-card-body .join-discord button {
   margin-top: 14px;
   width: 80%;
+  font-size: 11px;
 }
 
 .license-card-body .join-discord > h1 {
-  color: #fdacac;
+  color: var(--JoindiscordHeadingColor);
 }
 .license-card-body .dashboard button {
-  color: #acecfd;
+  color: var(--activeOptionColor);
 }
 
 .license-card-body .join-discord button {
@@ -106,8 +109,9 @@
   flex: 1;
 }
 
-.custom-body > .discord-webhook-btn > .toggle-option {
-  background-color: #fff;
+.custom-body > .discord-webhook-btn > .toggle-option,
+.license-activation-form > .license-toggle-option {
+  background-color: var(--bg-toggle-color);
   height: 20px;
   width: 60px;
   margin-left: 5px;
@@ -115,11 +119,14 @@
   position: relative;
   cursor: pointer;
 }
-.custom-body > .discord-webhook-btn > .toggle-option.webhookactive:after {
+.custom-body > .discord-webhook-btn > .toggle-option.webhookactive:after,
+.license-activation-form
+  .license-toggle-option.license-toggle-option-active:after {
   left: 66%;
 }
 
-.custom-body > .discord-webhook-btn > .toggle-option:after {
+.custom-body > .discord-webhook-btn > .toggle-option:after,
+.license-activation-form .license-toggle-option:after {
   content: "";
   position: absolute;
   top: 50%;
@@ -129,8 +136,8 @@
   width: 18px;
   height: 18px;
   border-radius: 50%;
-
   transition: 0.3s ease all;
+  pointer-events: none;
 }
 .cards .links-card {
   padding: 0.5rem 1rem;
@@ -159,7 +166,8 @@
   padding: 1rem;
   flex: 1;
   border-radius: 8px;
-  box-shadow: 1px 2px 4px rgba(9, 10, 16, 0.25);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
   overflow: auto;
   height: 95%;
 }
@@ -186,7 +194,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--DashboardFrontColor);
-  box-shadow: 1px 2px 4px rgba(9, 10, 16, 0.25);
+  box-shadow: 2px 3px 4px var(--box-shadow-color-1),
+    -2px -2px 4px var(--box-shadow-color-2);
   padding: 0.5rem 0.5rem;
   margin-bottom: 0.5rem;
 }
