@@ -1,5 +1,7 @@
 .monitors-container {
   flex: 1;
+  height: 93%;
+  margin-top: 10px;
   background-color: var(--DashboardFrontColor);
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);

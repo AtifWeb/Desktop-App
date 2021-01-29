@@ -41,7 +41,7 @@
 }
 
 .dashobard-btn-black {
-  font-size: 11px;
+  font-size: 10px;
   padding: 0.6rem 0rem;
   border: none;
   outline: none;
@@ -75,8 +75,8 @@ body {
 .dashboard-container,
 .license-activation-container {
   background-color: var(--DashboardBoxBgColor);
-  height: 600px;
-  width: 1058px;
+  height: 650px;
+  width: 1150px;
   position: relative;
   padding: 2rem 1.5rem;
   border-radius: 10px;
@@ -84,12 +84,12 @@ body {
 
 .dashboard-container > .top-dots {
   position: absolute;
-  right: 2%;
+  right: 1%;
   top: 1%;
 }
 
 .top-dots > #top-first-dot {
-  margin-right: 4px;
+  margin-right: 1px;
 }
 
 .top-dots > #top-first-dot > path,
@@ -106,6 +106,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* background-color: aqua; */
 }
 .dashboard-container-header .logo {
   display: flex;
@@ -137,6 +138,7 @@ body {
 
 .header-right > .icons > #notification-icon {
   margin-right: 8px;
+  margin-bottom: 5px;
 }
 .header-right > .icons > #notification-icon > path {
   fill: var(--Notifcation-color);
@@ -148,15 +150,15 @@ body {
   background-color: var(--DashboardFrontColor);
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
-  padding: 0.4rem 1.5rem;
-  margin: 0px 3rem 0px 1rem;
-  border-radius: 11px;
+  padding: 0.1rem 0.8rem;
+  margin: 0px 1.6rem 0px 1rem;
+  border-radius: 7px;
 }
 
 .profile > .profile-pic {
   background-image: url("../../images/avatar/avatar.png");
-  width: 32px;
-  height: 32px;
+  width: 31px;
+  height: 30px;
   border-radius: 50%;
 }
 
@@ -167,9 +169,10 @@ body {
 
 /* Body Start */
 .dashboard-container-body {
-  margin-top: 20px;
+  margin-top: 5px;
   display: flex;
-  height: 90%;
+  height: 99%;
+  /* background-color: aqua; */
 }
 .dashboard-container-body > .d-none {
   display: none;
@@ -186,8 +189,9 @@ body {
   border-radius: 5px;
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
-  height: 465px;
+  height: 537px;
   position: relative;
+  margin-top: 0.7rem;
 }
 
 .side-bar .options .option {
@@ -206,7 +210,7 @@ body {
   fill: var(--TextContentColor);
 }
 .side-bar .options .option > p {
-  font-size: 11px;
+  font-size: 10px;
   padding-top: 2px;
   padding: 0.3rem 0rem;
 }
@@ -225,13 +229,13 @@ body {
 
 /* side bar btns */
 .side-bar-btns {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 .side-bar-btns button {
   width: 100%;
-  font-size: 11px;
+  font-size: 9px;
   padding: 0.6rem 0rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: none;
   outline: none;
   color: var(--TextContentColor);
@@ -241,7 +245,6 @@ body {
   font-weight: 400;
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
-  font-size: 9px;
 }
 
 .side-bar .version {
@@ -265,7 +268,7 @@ body {
   width: 100%;
 }
 .license-activation-wrapper > small {
-  font-size: 8px;
+  font-size: 7px;
   color: var(--TextContentColor);
 }
 .activation-dot {

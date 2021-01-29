@@ -332,7 +332,7 @@
             </div>
           </section>
           <section class="bottom-dashboard-section">
-            <section class="past-checkouts-list">
+            <div class="past-checkouts-list">
               <h3>Past Checkouts</h3>
               <div class="checkout-table">
                 <!-- Row 1 -->
@@ -490,8 +490,8 @@
                   </div>
                 </div>
               </div>
-            </section>
-            <section class="past-checkouts-chart">
+            </div>
+            <div class="past-checkouts-chart">
               <h3 class="past-chart-heading">Checkouts</h3>
               <ul class="checkouts-chart-options">
                 <li class="chart-option" id="Day-chart">Day</li>
@@ -502,9 +502,9 @@
               <div class="checkout-chart">
                 <canvas id="pure-chart"></canvas>
               </div>
-            </section>
+            </div>
           </section>
-          <section class="bottom-dashboard-section"></section>
+          <!-- <section class="bottom-dashboard-section"></section> -->
         </section>
 
         <!-- Tasks -->
@@ -535,7 +535,11 @@
                 <table class="footsites-table">
                   <div class="footsites-table-head">
                     <div class="footsites-table-head-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input
+                        type="checkbox"
+                        class="footsites-checkbox"
+                        style="width: 8px; height: 8px"
+                      />
                       <small class="id-table-thead">ID</small>
                       <small class="products-table-thead">Products</small>
                       <small class="details-table-thead">Details</small>
@@ -546,7 +550,7 @@
                   </div>
                   <div class="task-table-body">
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" id="" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -927,7 +931,7 @@
 
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -1307,7 +1311,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -1687,7 +1691,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -2067,7 +2071,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -2447,7 +2451,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -2827,7 +2831,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -3207,7 +3211,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -3587,7 +3591,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -3967,7 +3971,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -4347,7 +4351,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -4727,7 +4731,7 @@
                     </div>
                     <!--  -->
                     <div class="task-table-body-row">
-                      <input type="checkbox" class="footsites-table-checkbox" />
+                      <input type="checkbox" class="footsites-checkbox" />
                       <small class="task-id">01</small>
                       <div class="product-image-wrapper">
                         <img
@@ -5228,8 +5232,8 @@
                         <div class="cart1">
                           <svg
                             class="group-task-blue-cart"
-                            width="15"
-                            height="14"
+                            width="9"
+                            height="8"
                             viewBox="0 0 15 14"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -5245,35 +5249,33 @@
                         <div class="cart2">
                           <svg
                             class="group-task-green-cart"
-                            width="15"
-                            height="14"
-                            viewBox="0 0 15 14"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              d="M4.5 11.2C3.675 11.2 3.0075 11.83 3.0075 12.6C3.0075 13.37 3.675 14 4.5 14C5.325 14 6 13.37 6 12.6C6 11.83 5.325 11.2 4.5 11.2ZM0 0V1.4H1.5L4.2 6.713L3.1875 8.428C3.0675 8.624 3 8.855 3 9.1C3 9.87 3.675 10.5 4.5 10.5H13.5V9.1H4.815C4.71 9.1 4.6275 9.023 4.6275 8.925L4.65 8.841L5.325 7.7H10.9125C11.475 7.7 11.97 7.413 12.225 6.979L14.91 2.436C14.97 2.338 15 2.219 15 2.1C15 1.715 14.6625 1.4 14.25 1.4H3.1575L2.4525 0H0ZM12 11.2C11.175 11.2 10.5075 11.83 10.5075 12.6C10.5075 13.37 11.175 14 12 14C12.825 14 13.5 13.37 13.5 12.6C13.5 11.83 12.825 11.2 12 11.2Z"
+                              d="M4.99992 0.833374C2.69992 0.833374 0.833252 2.70004 0.833252 5.00004C0.833252 7.30004 2.69992 9.16671 4.99992 9.16671C7.29992 9.16671 9.16658 7.30004 9.16658 5.00004C9.16658 2.70004 7.29992 0.833374 4.99992 0.833374ZM4.16659 7.08337L2.08325 5.00004L2.67075 4.41254L4.16659 5.90421L7.32909 2.74171L7.91658 3.33337L4.16659 7.08337Z"
                               fill="#ACFDB4"
                             />
                           </svg>
-
                           <small>200</small>
                         </div>
                         <div class="cart3">
                           <svg
                             class="group-task-pink-cart"
-                            width="15"
-                            height="14"
-                            viewBox="0 0 15 14"
+                            width="10"
+                            height="10"
+                            viewBox="0 0 10 10"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
                             <path
-                              d="M4.5 11.2C3.675 11.2 3.0075 11.83 3.0075 12.6C3.0075 13.37 3.675 14 4.5 14C5.325 14 6 13.37 6 12.6C6 11.83 5.325 11.2 4.5 11.2ZM0 0V1.4H1.5L4.2 6.713L3.1875 8.428C3.0675 8.624 3 8.855 3 9.1C3 9.87 3.675 10.5 4.5 10.5H13.5V9.1H4.815C4.71 9.1 4.6275 9.023 4.6275 8.925L4.65 8.841L5.325 7.7H10.9125C11.475 7.7 11.97 7.413 12.225 6.979L14.91 2.436C14.97 2.338 15 2.219 15 2.1C15 1.715 14.6625 1.4 14.25 1.4H3.1575L2.4525 0H0ZM12 11.2C11.175 11.2 10.5075 11.83 10.5075 12.6C10.5075 13.37 11.175 14 12 14C12.825 14 13.5 13.37 13.5 12.6C13.5 11.83 12.825 11.2 12 11.2Z"
+                              d="M4.99992 0.833374C2.69575 0.833374 0.833252 2.69587 0.833252 5.00004C0.833252 7.30421 2.69575 9.16671 4.99992 9.16671C7.30409 9.16671 9.16659 7.30421 9.16659 5.00004C9.16659 2.69587 7.30409 0.833374 4.99992 0.833374ZM7.08325 6.49587L6.49575 7.08337L4.99992 5.58754L3.50409 7.08337L2.91659 6.49587L4.41242 5.00004L2.91659 3.50421L3.50409 2.91671L4.99992 4.41254L6.49575 2.91671L7.08325 3.50421L5.58742 5.00004L7.08325 6.49587Z"
                               fill="#FDACAC"
                             />
                           </svg>
-
                           <small>25</small>
                         </div>
                       </div>
@@ -5322,7 +5324,7 @@
         <section class="profile-container Profile section-container d-none">
           <form class="profile-information">
             <div class="shopping-information">
-              <small>Shopping Information</small>
+              <small>Shipping Information</small>
               <input
                 type="text"
                 placeholder="First Name"
@@ -5393,122 +5395,162 @@
               </div>
             </div>
           </form>
-          <div class="card-holders">
-            <div class="card-holder credit-card">
-              <div class="profile-name">
-                <h3>Profile Name</h3>
-                <h3>Visa</h3>
+          <section class="profile-body-bottom">
+            <div class="card-holders">
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
               </div>
-              <img
-                src="../assets/images/Icons/profile-icon/credit-card.svg"
-                alt="chip"
-                class="chip-icon"
-              />
-              <div class="credit-card-numbers">
-                <span>*</span><span>*</span><span>*</span><span>*</span
-                ><span> </span><span>*</span><span>*</span><span>*</span
-                ><span>*</span><span></span><span>*</span><span>*</span
-                ><span>*</span><span>*</span><span> </span><span>1</span
-                ><span>2</span><span>3</span><span>4</span>
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
               </div>
-              <h3 class="card-holder-name">Cardholder name</h3>
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
+              </div>
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
+              </div>
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
+              </div>
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
+              </div>
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
+              </div>
+              <div class="card-holder credit-card">
+                <div class="profile-name">
+                  <h3>Profile Name</h3>
+                  <h3>Visa</h3>
+                </div>
+                <img
+                  src="../assets/images/Icons/profile-icon/credit-card.svg"
+                  alt="chip"
+                  class="chip-icon"
+                />
+                <div class="credit-card-numbers">
+                  <span>*</span><span>*</span><span>*</span><span>*</span
+                  ><span> </span><span>*</span><span>*</span><span>*</span
+                  ><span>*</span><span></span><span>*</span><span>*</span
+                  ><span>*</span><span>*</span><span> </span><span>1</span
+                  ><span>2</span><span>3</span><span>4</span>
+                </div>
+                <h3 class="card-holder-name">Cardholder name</h3>
+              </div>
             </div>
-            <div class="card-holder credit-card">
-              <div class="profile-name">
-                <h3>Profile Name</h3>
-                <h3>Visa</h3>
-              </div>
-              <img
-                src="../assets/images/Icons/profile-icon/credit-card.svg"
-                alt="chip"
-                class="chip-icon"
-              />
-              <div class="credit-card-numbers">
-                <span>*</span><span>*</span><span>*</span><span>*</span
-                ><span> </span><span>*</span><span>*</span><span>*</span
-                ><span>*</span><span></span><span>*</span><span>*</span
-                ><span>*</span><span>*</span><span> </span><span>1</span
-                ><span>2</span><span>3</span><span>4</span>
-              </div>
-              <h3 class="card-holder-name">Cardholder name</h3>
-            </div>
-            <div class="card-holder credit-card">
-              <div class="profile-name">
-                <h3>Profile Name</h3>
-                <h3>Visa</h3>
-              </div>
-              <img
-                src="../assets/images/Icons/profile-icon/credit-card.svg"
-                alt="chip"
-                class="chip-icon"
-              />
-              <div class="credit-card-numbers">
-                <span>*</span><span>*</span><span>*</span><span>*</span
-                ><span> </span><span>*</span><span>*</span><span>*</span
-                ><span>*</span><span></span><span>*</span><span>*</span
-                ><span>*</span><span>*</span><span> </span><span>1</span
-                ><span>2</span><span>3</span><span>4</span>
-              </div>
-              <h3 class="card-holder-name">Cardholder name</h3>
-            </div>
-            <div class="card-holder credit-card">
-              <div class="profile-name">
-                <h3>Profile Name</h3>
-                <h3>Visa</h3>
-              </div>
-              <img
-                src="../assets/images/Icons/profile-icon/credit-card.svg"
-                alt="chip"
-                class="chip-icon"
-              />
-              <div class="credit-card-numbers">
-                <span>*</span><span>*</span><span>*</span><span>*</span
-                ><span> </span><span>*</span><span>*</span><span>*</span
-                ><span>*</span><span></span><span>*</span><span>*</span
-                ><span>*</span><span>*</span><span> </span><span>1</span
-                ><span>2</span><span>3</span><span>4</span>
-              </div>
-              <h3 class="card-holder-name">Cardholder name</h3>
-            </div>
-            <div class="card-holder credit-card">
-              <div class="profile-name">
-                <h3>Profile Name</h3>
-                <h3>Visa</h3>
-              </div>
-              <img
-                src="../assets/images/Icons/profile-icon/credit-card.svg"
-                alt="chip"
-                class="chip-icon"
-              />
-              <div class="credit-card-numbers">
-                <span>*</span><span>*</span><span>*</span><span>*</span
-                ><span> </span><span>*</span><span>*</span><span>*</span
-                ><span>*</span><span></span><span>*</span><span>*</span
-                ><span>*</span><span>*</span><span> </span><span>1</span
-                ><span>2</span><span>3</span><span>4</span>
-              </div>
-              <h3 class="card-holder-name">Cardholder name</h3>
-            </div>
-            <div class="card-holder credit-card">
-              <div class="profile-name">
-                <h3>Profile Name</h3>
-                <h3>Visa</h3>
-              </div>
-              <img
-                src="../assets/images/Icons/profile-icon/credit-card.svg"
-                alt="chip"
-                class="chip-icon"
-              />
-              <div class="credit-card-numbers">
-                <span>*</span><span>*</span><span>*</span><span>*</span
-                ><span> </span><span>*</span><span>*</span><span>*</span
-                ><span>*</span><span></span><span>*</span><span>*</span
-                ><span>*</span><span>*</span><span> </span><span>1</span
-                ><span>2</span><span>3</span><span>4</span>
-              </div>
-              <h3 class="card-holder-name">Cardholder name</h3>
-            </div>
-          </div>
+          </section>
         </section>
 
         <!-- Monitors -->
@@ -5744,53 +5786,54 @@
         <!-- settings -->
         <section class="settings-container Settings section-container d-none">
           <!-- Cards Area -->
-          <div class="cards">
-            <div class="card license-details-card">
-              <div class="card-top">
-                <p>License Details</p>
-                <p>Renewal</p>
-              </div>
-              <div class="license-card-body">
-                <div class="dashboard">
-                  <h1>March 1st, 2020</h1>
-                  <button class="dashobard-btn-black">Dashboard</button>
+          <section class="left-side-settings-container">
+            <div class="cards">
+              <div class="card license-details-card">
+                <div class="card-top">
+                  <p>License Details</p>
+                  <p>Renewal</p>
                 </div>
-                <div class="join-discord">
-                  <h1>20 Days Remaining</h1>
-                  <button class="dashobard-btn-black">Join Discord</button>
+                <div class="license-card-body">
+                  <div class="dashboard">
+                    <h1>March 1st, 2020</h1>
+                    <button class="dashobard-btn-black">Dashboard</button>
+                  </div>
+                  <div class="join-discord">
+                    <h1>20 Days Remaining</h1>
+                    <button class="dashobard-btn-black">Join Discord</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card quick-task-card">
+                <div class="card-top">
+                  <p>Quick Task</p>
+                </div>
+                <div class="quick-task-body">
+                  <button class="dashobard-btn-black">Profile</button>
+                  <button class="dashobard-btn-black">Proxies</button>
+                  <button class="dashobard-btn-black">Account</button>
+                  <button class="dashobard-btn-black">Size</button>
+                  <button class="dashobard-btn-black">Mode</button>
+                  <button class="dashobard-btn-black">Rates</button>
+                </div>
+              </div>
+              <div class="card custom-card">
+                <div class="card-top">
+                  <p>Custom</p>
+                </div>
+                <div class="custom-body">
+                  <div class="btns">
+                    <button class="dashobard-btn-black">Sound</button>
+                    <button class="dashobard-btn-black">Monitor</button>
+                    <button class="dashobard-btn-black">Error</button>
+                  </div>
+                  <div class="discord-webhook-btn">
+                    <button class="dashobard-btn-black">Discord Webhook</button>
+                    <span class="toggle-option color-toggle"></span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="card quick-task-card">
-              <div class="card-top">
-                <p>Quick Task</p>
-              </div>
-              <div class="quick-task-body">
-                <button class="dashobard-btn-black">Profile</button>
-                <button class="dashobard-btn-black">Proxies</button>
-                <button class="dashobard-btn-black">Account</button>
-                <button class="dashobard-btn-black">Size</button>
-                <button class="dashobard-btn-black">Mode</button>
-                <button class="dashobard-btn-black">Rates</button>
-              </div>
-            </div>
-            <div class="card custom-card">
-              <div class="card-top">
-                <p>Custom</p>
-              </div>
-              <div class="custom-body">
-                <div class="btns">
-                  <button class="dashobard-btn-black">Sound</button>
-                  <button class="dashobard-btn-black">Monitor</button>
-                  <button class="dashobard-btn-black">Error</button>
-                </div>
-                <div class="discord-webhook-btn">
-                  <button class="dashobard-btn-black">Discord Webhook</button>
-                  <span class="toggle-option color-toggle"></span>
-                </div>
-              </div>
-            </div>
-
             <div class="card links-card">
               <nav class="links">
                 <li><a href="#" class="link">Download Logs</a></li>
@@ -5801,7 +5844,7 @@
                 <li><a href="#" class="link">Instagram</a></li>
               </nav>
             </div>
-          </div>
+          </section>
 
           <div class="accounts-container">
             <h3>100 Accounts</h3>
@@ -6351,8 +6394,8 @@
                 <div class="cart1">
                   <svg
                     class="group-task-blue-cart"
-                    width="15"
-                    height="14"
+                    width="9"
+                    height="8"
                     viewBox="0 0 15 14"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -6368,14 +6411,14 @@
                 <div class="cart2">
                   <svg
                     class="group-task-green-cart"
-                    width="15"
-                    height="14"
-                    viewBox="0 0 15 14"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M4.5 11.2C3.675 11.2 3.0075 11.83 3.0075 12.6C3.0075 13.37 3.675 14 4.5 14C5.325 14 6 13.37 6 12.6C6 11.83 5.325 11.2 4.5 11.2ZM0 0V1.4H1.5L4.2 6.713L3.1875 8.428C3.0675 8.624 3 8.855 3 9.1C3 9.87 3.675 10.5 4.5 10.5H13.5V9.1H4.815C4.71 9.1 4.6275 9.023 4.6275 8.925L4.65 8.841L5.325 7.7H10.9125C11.475 7.7 11.97 7.413 12.225 6.979L14.91 2.436C14.97 2.338 15 2.219 15 2.1C15 1.715 14.6625 1.4 14.25 1.4H3.1575L2.4525 0H0ZM12 11.2C11.175 11.2 10.5075 11.83 10.5075 12.6C10.5075 13.37 11.175 14 12 14C12.825 14 13.5 13.37 13.5 12.6C13.5 11.83 12.825 11.2 12 11.2Z"
+                      d="M4.99992 0.833374C2.69992 0.833374 0.833252 2.70004 0.833252 5.00004C0.833252 7.30004 2.69992 9.16671 4.99992 9.16671C7.29992 9.16671 9.16658 7.30004 9.16658 5.00004C9.16658 2.70004 7.29992 0.833374 4.99992 0.833374ZM4.16659 7.08337L2.08325 5.00004L2.67075 4.41254L4.16659 5.90421L7.32909 2.74171L7.91658 3.33337L4.16659 7.08337Z"
                       fill="#ACFDB4"
                     />
                   </svg>
@@ -6385,18 +6428,17 @@
                 <div class="cart3">
                   <svg
                     class="group-task-pink-cart"
-                    width="15"
-                    height="14"
-                    viewBox="0 0 15 14"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 10 10"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
-                      d="M4.5 11.2C3.675 11.2 3.0075 11.83 3.0075 12.6C3.0075 13.37 3.675 14 4.5 14C5.325 14 6 13.37 6 12.6C6 11.83 5.325 11.2 4.5 11.2ZM0 0V1.4H1.5L4.2 6.713L3.1875 8.428C3.0675 8.624 3 8.855 3 9.1C3 9.87 3.675 10.5 4.5 10.5H13.5V9.1H4.815C4.71 9.1 4.6275 9.023 4.6275 8.925L4.65 8.841L5.325 7.7H10.9125C11.475 7.7 11.97 7.413 12.225 6.979L14.91 2.436C14.97 2.338 15 2.219 15 2.1C15 1.715 14.6625 1.4 14.25 1.4H3.1575L2.4525 0H0ZM12 11.2C11.175 11.2 10.5075 11.83 10.5075 12.6C10.5075 13.37 11.175 14 12 14C12.825 14 13.5 13.37 13.5 12.6C13.5 11.83 12.825 11.2 12 11.2Z"
+                      d="M4.99992 0.833374C2.69575 0.833374 0.833252 2.69587 0.833252 5.00004C0.833252 7.30421 2.69575 9.16671 4.99992 9.16671C7.30409 9.16671 9.16659 7.30421 9.16659 5.00004C9.16659 2.69587 7.30409 0.833374 4.99992 0.833374ZM7.08325 6.49587L6.49575 7.08337L4.99992 5.58754L3.50409 7.08337L2.91659 6.49587L4.41242 5.00004L2.91659 3.50421L3.50409 2.91671L4.99992 4.41254L6.49575 2.91671L7.08325 3.50421L5.58742 5.00004L7.08325 6.49587Z"
                       fill="#FDACAC"
                     />
                   </svg>
-
                   <small>25</small>
                 </div>
               </div>

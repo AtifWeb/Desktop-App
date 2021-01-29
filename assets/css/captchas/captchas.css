@@ -1,12 +1,13 @@
 .captchas-container {
   flex: 1;
-  height: 90%;
+  height: 94%;
+  margin-top: 5px;
   overflow: auto;
   background-color: var(--DashboardFrontColor);
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
   border-radius: 10px;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
 }
 
 .captchas-cards {
@@ -14,6 +15,7 @@
   grid-template-columns: repeat(3, 1fr);
   max-height: 100%;
   overflow: auto;
+  padding: 0.5rem;
 }
 .captchas-cards::-webkit-scrollbar {
   width: 3px;

@@ -1,8 +1,23 @@
 .proxy-container {
   display: flex;
   flex: 1;
-  /* background-color: aqua; */
+  height: 94%;
+  margin-top: 5px;
 }
+
+.proxy-good-bad-details {
+  height: 92%;
+}
+.proxy-group-form {
+  height: 100%;
+}
+.proxy-group-form .field-wrapper {
+  height: 92.5%;
+}
+.proxy-collection .all-proxies-container {
+  height: 94%;
+}
+
 .proxy-collection {
   width: 300px;
   margin-top: 16px;
@@ -87,7 +102,7 @@
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
   padding: 0.5rem;
-  height: 410px;
+  /* height: 410px; */
   overflow: auto;
 }
 
