@@ -1,11 +1,15 @@
 .create-group-task-popup {
-  position: relative;
   width: 100%;
   width: 1058px;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
 }
 .create-group-task-popup.d-none {
