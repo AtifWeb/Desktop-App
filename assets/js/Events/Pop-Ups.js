@@ -24,6 +24,7 @@ export class DashboardPopUps extends PopUps_Variables {
   }
   ShowAddGroupTaskPopUp() {
     self.CurrentActivePopUp = self.AddGroupTaskForm;
+    console.log(self.CurrentActivePopUp)
     self.popupsBackground.style.display = "block";
     self.AddGroupTaskForm.style.display = "flex";
   }
@@ -35,6 +36,7 @@ export class DashboardPopUps extends PopUps_Variables {
 
   ShowCreateTaskPop() {
     self.CurrentActivePopUp = self.CreateTaskPopUp;
+    
     self.popupsBackground.style.display = "block";
     self.CreateTaskPopUp.style.display = "block";
   }
@@ -75,6 +77,7 @@ export class DashboardPopUps extends PopUps_Variables {
   //   self.CreateTaskPopUp.classList.add("d-none");
   // }
   HideThourghBackground() {
+    console.log(self.CurrentActivePopUp)
     self.CurrentActivePopUp.style.display = "none";
     self.popupsBackground.style.display = "none";
   }

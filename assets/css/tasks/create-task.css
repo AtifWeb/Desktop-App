@@ -40,13 +40,19 @@
   height: 28px;
   font-size: 12px;
   margin-bottom: 15px;
-  border-radius: 22px;
+  border-radius: 5px;
 }
+.create-task-popup .advanced-blue-button .input-collection input{
+  margin-bottom: 0px;
+}
+
 .general-green-button-form .input-collection {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 20px;
   column-gap: 50px;
+  /* background-color: #dee4ee; */
+  padding: 0rem 1.5rem;
   margin-top: 2.4rem;
 }
 .create-task-popup .input-collection > input:nth-child(3) {
@@ -85,27 +91,32 @@
 .create-task-popup .form-bottom {
   position: absolute;
   right: 3%;
-  bottom: 5px;
+  bottom: 0px;
+
 }
 .create-task-popup .form-bottom > label {
   cursor: pointer;
 }
 
 .advanced-blue-button-form .input-collection {
-  margin-top: 2.4rem;
+  margin-top: 1.4rem;
+  padding: 0rem 1.5rem;
 }
 
 .advanced-blue-button-form .input-collection > div > h4 {
   text-align: center;
   font-weight: 400;
   font-size: 14px;
-  margin: 10px 0px;
+  margin: 20px 0px;
+}
+.advanced-blue-button-form .input-collection > div:first-child > h4 {
+  margin-top: 0px;
 }
 
 .create-task-input-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 10px;
+  row-gap: 30px;
   column-gap: 50px;
 }
 

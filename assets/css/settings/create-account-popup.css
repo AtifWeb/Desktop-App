@@ -37,9 +37,9 @@
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
   color: var(--TextContentColor);
-  height: 46px;
+  height: 28px;
   font-size: 12px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .inputs-wrapper > input:nth-child(2n + 1),
 .inputs-wrapper > input:nth-child(1) {

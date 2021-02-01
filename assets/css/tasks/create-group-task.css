@@ -95,6 +95,7 @@
   right: 0;
   height: 100%;
   overflow: auto;
+  display: none;
 }
 .create-group-task-popup .group-tasks::-webkit-scrollbar {
   display: none;
