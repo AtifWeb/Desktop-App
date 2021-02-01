@@ -58,7 +58,10 @@ const ColorTogglerButtons = QueryAll(".color-toggle");
 
 // task query
 const CreateTaskButton = Query(".create-task-btn");
-const CloseCreateTaskButton = QueryAll(".create-task-third-dot");
+const GreenCreateTaskButton = QueryAll(".create-task-first-dot");
+const BlueCreateTaskButton = QueryAll(".create-task-second-dot");
+const PurpleCreateTaskButton = QueryAll(".create-task-third-dot");
+const PopUpsBackground = Query(".bg-pop-ups");
 
 // helping functions
 
@@ -121,10 +124,19 @@ CaptchasClosePopUpButton.forEach((EachCaptchaButton) => {
 
 // task popups
 CreateTaskButton.addEventListener("click", DB_POPUPS.ShowCreateTaskPop);
-CloseCreateTaskButton.forEach((EachCloseCreateTaskButton) => {
-  EachCloseCreateTaskButton.addEventListener(
-    "click",
-    DB_POPUPS.HideCreateTaskPop
+GreenCreateTaskButton.forEach((EachCreateTaskButton) => {
+  EachCreateTaskButton.addEventListener("click", (e) =>
+    DB_POPUPS.ShowCreateTaskGreenForm(e)
+  );
+});
+BlueCreateTaskButton.forEach((EachCreateTaskButton) => {
+  EachCreateTaskButton.addEventListener("click", (e) =>
+    DB_POPUPS.ShowCreateTaskBlueForm(e)
+  );
+});
+PurpleCreateTaskButton.forEach((EachCreateTaskButton) => {
+  EachCreateTaskButton.addEventListener("click", (e) =>
+    DB_POPUPS.ShowCreateTaskPurpleForm(e)
   );
 });
 
@@ -140,4 +152,5 @@ ColorTogglerButtons.forEach((EachTogglerButton) => {
   EachTogglerButton.addEventListener("click", (e) => DrawLineChart());
 });
 
-//
+// Hide Thourgh Background
+PopUpsBackground.addEventListener("click", DB_POPUPS.HideThourghBackground);

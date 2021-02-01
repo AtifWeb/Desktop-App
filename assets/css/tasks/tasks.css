@@ -11,25 +11,37 @@
 .task-left-side {
   height: 98.5%;
   flex: 1;
+  /* background-color: blue; */
+  width: 100%;
+  position: relative;
+  
 }
 .progress-cards {
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   display: flex;
   align-items: center;
+  justify-content: center;
+  /* background-color: #818181; */
+  position: absolute;
+  top: -6%;
+  width: 100%;
 }
 .progress-cards > * + * {
-  margin-left: 10px;
+  margin-left: 40px;
 }
 .progress-card {
   background-color: var(--DashboardFrontColor);
-  padding: 0.5rem 1.5rem;
+  padding: 0rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
-  flex: 1;
+  width: 153px;
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
+    height: 61px;
+  
+  
 }
 .progress-card h3:nth-child(1) {
   font-size: 18px;
@@ -48,10 +60,12 @@
   background-color: var(--DashboardFrontColor);
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
-  margin-top: 1rem;
+  margin-top: 3.5rem;
   padding: 1rem;
   border-radius: 10px;
-  height: 89%;
+  height: 91.2%;
+  position: relative;
+  
 }
 
 .footsites-top {
@@ -73,7 +87,7 @@
   display: flex;
   align-items: center;
   padding: 0rem 0.4rem;
-  border-top: 1px solid var(--TextContentColor);
+  padding-bottom: .2rem;
   border-bottom: 1px solid var(--TextContentColor);
 }
 .footsites-table-head .footsites-table-head-row small {
@@ -116,14 +130,13 @@
 }
 .footsites-table-head .footsites-table-head-row .action-table-thead,
 .task-table-body .task-table-body-row .tasks-table-icons {
-  flex: 1;
-  /* background-color: gray; */
+  flex: 1; 
 }
 
 /* table body */
 .task-table-body {
   margin-top: 5px;
-  height: 430px;
+  height:425px;
   overflow-y: auto;
   /* background-color: aqua; */
 }
@@ -178,14 +191,13 @@
 .task-table-body .task-table-body-row .tasks-table-icons {
   display: flex;
   align-items: center;
-
-  justify-content: center;
+  justify-content: flex-end;
 }
 .task-table-body .task-table-body-row .tasks-table-icons > * {
   cursor: pointer;
 }
 .task-table-body .task-table-body-row .tasks-table-icons > * + * {
-  margin-left: 3px;
+  margin-left: 2px;
 }
 .task-details div {
   display: flex;

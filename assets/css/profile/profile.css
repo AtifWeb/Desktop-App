@@ -1,7 +1,7 @@
 .profile-container {
   flex: 1;
-  height: 94%;
-  margin-top: 5px;
+  height: 98%;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   overflow: auto;
@@ -12,7 +12,7 @@
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   position: relative;
 }
 .profile-information > * + * {

@@ -39,7 +39,7 @@
   /* Tasks Color */
   --create-task-btn3: #c190ff;
 }
-.pop-ups {
+.bg-pop-ups {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -114,6 +114,9 @@ body {
   justify-content: space-between;
   align-items: center;
   /* background-color: aqua; */
+  top: 3.4%;
+  position: absolute;
+  width: 93%;
 }
 .dashboard-container-header .logo {
   display: flex;
@@ -158,8 +161,8 @@ body {
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
   padding: 0.1rem 0.8rem;
-  margin: 0px 1.6rem 0px 1rem;
-  border-radius: 7px;
+  margin: 0px 0rem 0px 1rem;
+  border-radius: 5px;
 }
 
 .profile > .profile-pic {
@@ -178,8 +181,10 @@ body {
 .dashboard-container-body {
   margin-top: 5px;
   display: flex;
-  height: 99%;
-  /* background-color: aqua; */
+  height: 95%;
+  margin-top: 40px;
+  /* background-color: rgb(209, 56, 145); */
+  position: relative;
 }
 .dashboard-container-body > .d-none {
   display: none;
@@ -196,7 +201,7 @@ body {
   border-radius: 5px;
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
     -2px -2px 4px var(--box-shadow-color-2);
-  height: 537px;
+  height: 97.5%;
   position: relative;
   margin-top: 0.7rem;
 }
@@ -247,7 +252,7 @@ body {
   outline: none;
   color: var(--TextContentColor);
   background-color: var(--DashboardBoxBgColor);
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
   font-weight: 400;
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),

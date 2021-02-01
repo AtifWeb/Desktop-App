@@ -87,6 +87,9 @@
 .proxy-container .proxy-good-bad-information > .good-bad-collection {
   margin-bottom: 10px;
 }
+.proxy-container .proxy-good-bad-information > .good-bad-collection > *{
+  height: 45px;
+}
 .proxy-container .proxy-good-bad-information > .good-bad-collection > * + * {
   margin-left: 20px;
 }

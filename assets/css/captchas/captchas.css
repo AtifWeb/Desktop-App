@@ -1,7 +1,7 @@
 .captchas-container {
   flex: 1;
-  height: 94%;
-  margin-top: 5px;
+  height: 98%;
+  margin-top: 10px;
   overflow: auto;
   background-color: var(--DashboardFrontColor);
   box-shadow: 2px 3px 4px var(--box-shadow-color-1),
