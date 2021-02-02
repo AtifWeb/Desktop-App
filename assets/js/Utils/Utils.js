@@ -1,3 +1,4 @@
+// DEMI TEXT YOU CAN USE DATABASE MEANS FETCH ACCOUNT DATA 
 export const Accounts=[
     {id:1,name:"Atif",email:"AtifAsim@Atif.com",password:"Password123",profile:"profile1"},
     {id:2,name:"Asim Ishaq",email:"AsimIshaq@Asim.com",password:"Password123",profile:"profile2"},

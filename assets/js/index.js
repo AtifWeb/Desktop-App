@@ -6,20 +6,7 @@ import { DisplayTaskDetails } from "./Events/Tasks.js";
 import { ActivateWebookOption } from "./Events/Settings.js";
 import { ActivateLicenseOption } from "./Events/LicenseActivation.js";
 import { SwitchColor } from "./Events/ColorSwitch.js";
-// import {
-//   ContainAllOptions,
-//   TasksDisplayIcon,
-//   createaccountsidbarbtn,
-//   CreateAccountCloseFormButton,
-//   AddGroupTaskButton,
-//   CaptchasOpenPopUpButton,
-//   CaptchasClosePopUpButton,
-//   ActiveOptionHeading,
-//   previousActiveSection,
-//   previousActiveOption,
-//   PreivousTaskDetails,
-// } from "./Variables.js";
-
+// import {AllVariables} from './Variables.js'
 import {
   DayLineChart,
   WeekLineChart,
@@ -48,13 +35,14 @@ const CreateAccountCloseFormButton = Query(".close-create-account-btn");
 const AddGroupTaskButton = Query(".add-group-task-icon");
 const CaptchasOpenPopUpButton = QueryAll(".share-icon-wrapper");
 const CaptchasClosePopUpButton = QueryAll(".close-captchas-button");
+const ColorTogglerButtons = QueryAll(".color-toggle");
 let CurrentActiveSideButtons = Query(".dashboard-btns");
 let ChartOption = QueryAll(".chart-option");
 let ActiveOptionHeading = Query(".active-option-heading");
 let previousActiveSection = Query(".dashboard-Option-container");
 let previousActiveOption = Query("#Dashboard");
 let PreivousTaskDetails = "";
-const ColorTogglerButtons = QueryAll(".color-toggle");
+
 
 // task query
 const CreateTaskButton = Query(".create-task-btn");
@@ -63,7 +51,6 @@ const BlueCreateTaskButton = QueryAll(".create-task-second-dot");
 const PurpleCreateTaskButton = QueryAll(".create-task-third-dot");
 const PopUpsBackground = Query(".bg-pop-ups");
 
-// helping functions
 
 // Event functions
 
