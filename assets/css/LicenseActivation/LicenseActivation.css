@@ -1,0 +1,153 @@
+.license-activation-container {
+  position: relative;
+  height: 100vh;
+  background: #080809 url(../../images/MainLogo.png);
+  background-repeat: no-repeat;
+  background-position: 120% center;
+  font-family: Montserrat;
+}
+.file-image {
+  position: absolute;
+}
+.box1,
+.box2 {
+  width: 105px;
+  height: 42px;
+  position: absolute;
+  border-radius: 50%;
+}
+.box1 {
+  background-color: var(--box1Color);
+  left: 28%;
+  top: 15%;
+}
+.box2 {
+  background-color: var(--box2Color);
+  left: 65%;
+  top: 35%;
+}
+
+.box3 {
+  width: 240px;
+  height: 176px;
+  background-color: var(--box3Color);
+  border-radius: 50%;
+  position: absolute;
+  left: 22%;
+  top: 55%;
+  box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.15);
+  filter: blur(86px);
+}
+
+.main-box {
+  background-color: rgba(255, 255, 255, 0.03);
+  width: 640px;
+  height: 497px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(86px);
+  padding: 2rem 1rem;
+}
+.main-box .main-box-top {
+  text-align: center;
+}
+.main-box .main-box-top img {
+  margin-bottom: 10px;
+  width: 143px;
+  height: 120px;
+}
+.main-box .main-box-top h1 {
+  color: #dee4ee;
+  font-size: 35px;
+}
+.main-box .main-box-top h1 span {
+  font-weight: 300;
+}
+
+/* license-activation-form */
+.form-wrapper {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+.license-activation-form label {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.license-activation-form .pure-input-wrapper {
+  border-radius: 5px;
+  position: relative;
+}
+
+.license-activation-form .pure-input-wrapper .pure-input {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  height: 48px;
+  width: 350px;
+  font-size: 15px;
+  outline: none;
+  color: #fff;
+  padding: 0rem 1rem;
+  font-weight: 200;
+}
+
+.activation-button-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.activation-button {
+  border: none;
+  outline: none;
+  background-color: var(--licenseActivationbgButton);
+  color: var(--licenseActivationfrontButton);
+  width: 176px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.toggle-btn {
+  width: 35px;
+  height: 20px;
+  background-color: var(--toggle-bg-color);
+  border-radius: 22px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 64px rgba(255, 255, 255, 0.05),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(86px);
+}
+.toggle-btn.active-toggle-btn .inner-btn {
+  left: 50%;
+}
+.toggle-btn .inner-btn {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-color: var(--toggle-small-btn-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s ease all;
+}

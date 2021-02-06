@@ -1,0 +1,122 @@
+@font-face {
+  src: url(../font/Montserrat-Regular.ttf);
+  font-family: Montserrat;
+}
+@font-face {
+  src: url(../font/Roboto-Bold.ttf);
+  font-family: RobotoBold;
+}
+@font-face {
+  src: url(../font/Roboto-Regular.ttf);
+  font-family: RobotoRegular;
+}
+:root {
+  --box1Color: #0057ff;
+  --box2Color: #9e56e1;
+  --box3Color: #27ae60;
+  --mainboxColor: #ffffff;
+  --licenseActivationbgButton: #17b9f9;
+  --licenseActivationfrontButton: #fff;
+  --toggle-bg-color: rgba(255, 255, 255, 0.03);
+  --toggle-small-btn-color: #2efe85;
+  --NotificationBoxBgColor: rgba(172, 236, 253, 0.83);
+  --CommonBgBoxColor: rgb(255, 255, 255, 0.03);
+  --CommonTextColor: #dee4ee;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Dashboard-Container {
+  padding: 1.5rem;
+  background: linear-gradient(to top, #131415, #000000);
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+.dashboard-top-icons {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+.dashboard-top-icons > svg:first-child {
+  margin-right: 7px;
+}
+.dashboard-sidebar {
+  height: 100%;
+  width: 69px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 32px;
+  box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05),
+    inset 0px 4px 4px rgba(255, 255, 255, 0.15);
+  padding: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+}
+.profile-pic {
+  margin: auto;
+}
+.profile-pic {
+  background-image: url(../images/profile-pic.png);
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+.dashboard-options {
+  margin-top: 1rem;
+}
+.dashboard-options .dashboard-option {
+  padding: 0.6rem 0rem;
+  text-align: center;
+}
+.dashboard-options .dashboard-option svg {
+  cursor: pointer;
+}
+.dashboard-sidebar-bottom {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.dashboard-sidebar-bottom-icons {
+  text-align: center;
+}
+.dashboard-sidebar-bottom-icons .icon-wrapper {
+  padding: 0.2rem 0rem;
+}
+
+.sidebar-notifcation-box {
+  width: 46px;
+  height: 94px;
+  background-color: var(--NotificationBoxBgColor);
+  border-radius: 22px;
+  margin-top: 5px;
+  padding: 1rem 0rem;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-notifcation-box .icon-wrapper {
+  width: 34px;
+  height: 34px;
+  background: linear-gradient(
+    111.69deg,
+    rgba(255, 255, 255, 0.33) 1.29%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 5px 0px #000000 19%, -2px -2px 5px 0px #ffffff 10%;
+}
+.sidebar-notifcation-box span {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
